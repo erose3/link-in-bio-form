@@ -10,7 +10,15 @@ class ItemsController < ApplicationController
   end
 
   def add
-    render({ :template => "item_templates/create" })
+
+    x = Item.new
+    x.link_url = params.fetch("link_url_param")
+    x.link_description = params.fetch("link_description_param")
+    x.thumbnail_url = params.fetch("thumbnail_url_param")
+    x.save
+
+    redirect_to("/")
+
   end
 
 end
