@@ -1,13 +1,13 @@
 <h1> Add a new item </h1>
 
-<form action= "/form/add">
-<d1>
-  <dt> <label for= "link-url">Link URL</label>
-  <input id="link-url" name="url" placeholder="Enter a URL..."></dt>
-  <dt> <label for= "link-desc">Link Description</label>
-  <input id="link-desc" name="desc" placeholder="Enter a link description..."></dt>
-  <dt> <label for= "thumbnail-url">Thumbnail URL</label>
-  <input id="thumbnail-url" name="thumbnail" placeholder="Enter a thumbnail URL..."></dt>
-  <dt><button>Create item</button></dt>
-</dt>
+<form action= "add_link" method="post">
+  <d1>
+    <dt> <label for= "link_url_field">Link URL</label>
+    <input id="link_url_field" name="link_url" placeholder="Enter a URL..."></dt>
+    <dt> <label for= "link_desc_field">Link Description</label>
+    <input id="link_desc_field" name="link_description" placeholder="Enter a link description..."></dt>
+    <dt> <label for= "link_thumbnail_field">Thumbnail URL</label>
+    <input id="link_thumbnail_field" name="thumbnail_url" placeholder="Enter a thumbnail URL..."></dt>
+    <dt><button>Create item</button></dt>
+  </d1>
 </form>

@@ -9,4 +9,8 @@ class ItemsController < ApplicationController
     render({ :template => "item_templates/form" })
   end
 
+  def add
+    render({ :template => "item_templates/create" })
+  end
+
 end

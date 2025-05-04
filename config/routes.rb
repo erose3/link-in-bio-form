@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get("/backdoor", { :controller => "items", :action => "form" })
 
+  post("/add_link", { :controller => "items", :action => "add" })
+
 end
